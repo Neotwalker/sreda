@@ -32,11 +32,11 @@
 <body>
 
 	<div class="main--wrapper">
-		<div class="header--banner">
-			<span>Квартиры от строительной компании «Средастрой» в Краснодаре!</span>
-			<a href="#">Подробнее</a>
-		</div>
 		<header class="header">
+			<div class="header--banner">
+				<span>Квартиры от строительной компании «Средастрой» в Краснодаре!</span>
+				<a href="#">Подробнее</a>
+			</div>
 			<div class="container">
 				<div class="header--wrapper">
 					<div class="header--top">
@@ -85,6 +85,9 @@
 							</ul>
 						</nav>
 						<a href="tel:+79014946071" class="phone">8 901 494-60-71</a>
+						<button class="burger" title="Открыть меню">
+							<span></span><span></span><span></span>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -226,9 +229,9 @@
 								</div>
 							</div>
 						</div>
+						<h1 class="h2">ЖК «Золотой берег» <span>от 3,8 млн ₽</span></h1>
 					</div>
 					<div class="about--header__info">
-						<h1 class="h2">ЖК «Золотой берег» <span>от 3,8 млн ₽</span></h1>
 						<div class="filters apartments--filter">
 							<div class="block">
 								<span>Количество комнат</span>
@@ -979,39 +982,9 @@
 						<div class="swiper-wrapper">
 							<div class="item swiper-slide">
 								<img src="img/environment.png" alt="#">
-								<button class="fancybox" title="Открыть галерею">
-									<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_1308_18257)">
-											<path d="M11 7.5L16 2.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 2.5H16V6.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M8 10.5L3 15.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M7 15.5H3V11.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-										</g>
-										<defs>
-											<clipPath id="clip0_1308_18257">
-												<rect width="14" height="14" fill="white" transform="translate(2.5 2)"></rect>
-											</clipPath>
-										</defs>
-									</svg>
-								</button>
 							</div>
 							<div class="item swiper-slide">
 								<img src="img/environment.png" alt="#">
-								<button class="fancybox" title="Открыть галерею">
-									<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_1308_18257)">
-											<path d="M11 7.5L16 2.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M12 2.5H16V6.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M8 10.5L3 15.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M7 15.5H3V11.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
-										</g>
-										<defs>
-											<clipPath id="clip0_1308_18257">
-												<rect width="14" height="14" fill="white" transform="translate(2.5 2)"></rect>
-											</clipPath>
-										</defs>
-									</svg>
-								</button>
 							</div>
 						</div>
 						<div class="button--swiper prev-environment swiper-button-prev">
@@ -1024,6 +997,21 @@
 								<path d="M1.5 13L7.5 7L1.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 							</svg>
 						</div>
+						<button class="fancybox" title="Открыть галерею">
+							<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1308_18257)">
+									<path d="M11 7.5L16 2.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M12 2.5H16V6.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8 10.5L3 15.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M7 15.5H3V11.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_1308_18257">
+										<rect width="14" height="14" fill="white" transform="translate(2.5 2)"></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</button>
 					</div>
 					<div class="list">
 						<div class="item">
@@ -1096,384 +1084,571 @@
 			</section>
 			<section class="chooseApps">
 				<div class="container">
-					<h2 class="h2">Выберите квартиру</h2>
-					<div class="chooseApps__wrapper">
-						<div class="left">
-							<div class="filters apartments--filter">
-								<div class="chooseApps__buttons group--radio">
-									<input type="checkbox" name="filter1" id="2-studio" value="all" checked>
-									<label for="2-studio">Студия</label>
-
-									<input type="checkbox" name="filter1" id="2-1" value="1">
-									<label for="2-1">1</label>
-
-									<input type="checkbox" name="filter1" id="2-2" value="2">
-									<label for="2-2">2</label>
-
-									<input type="checkbox" name="filter1" id="2-3" value="3">
-									<label for="2-3">3</label>
+					<div class="chooseApps__blocks">
+						<h2 class="h2">Выберите квартиру</h2>
+						<div class="chooseApps__wrapper">
+							<div class="left">
+								<div class="filters chooseApps__buttons group--radio">
+									<button class="button button--main" data-chooseApps="Студия">Студия</button>
+									<button class="button button--main" data-chooseApps="1">1</button>
+									<button class="button button--main" data-chooseApps="2">2</button>
+									<button class="button button--main" data-chooseApps="3+">3+</button>
 								</div>
-							</div>
-							<div class="chooseApps__block">
-								<div class="title layouts">12 планировок</div>
-								<div class="chooseApps__list active" data-listApps="Студия">
-									<div class="item active">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
+								<div class="chooseApps__block">
+									<div class="title layouts">12 планировок</div>
+									<div class="chooseApps__list">
+										<div class="item" data-chosenApps="1" data-chooseCurrent="1">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">52,2 м2</div>
+												<div class="count small">10</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-										<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="2">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">52,4 м2</div>
+												<div class="count small">2</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="3">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">129,4 м2</div>
+												<div class="count small">4</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="4">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">52,2 м2</div>
+												<div class="count small">10</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="5">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">129,4 м2</div>
+												<div class="count small">2</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="6">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">52,2 м2</div>
+												<div class="count small">10</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="7">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">129,4 м2</div>
+												<div class="count small">2</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
+										<div class="item" data-chosenApps="2" data-chooseCurrent="8">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">129,4 м2</div>
+												<div class="count small">4</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
+										<div class="item" data-chosenApps="Студия" data-chooseCurrent="9">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">52,2 м2</div>
+												<div class="count small">10</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div><div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div><div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-								</div>
-								<div class="chooseApps__list" data-listApps="1">
-									<div class="item active">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-										<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div><div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div><div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">4</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">52,2 м2</div>
-											<div class="count small">10</div>
-										</div>
-									</div>
-									<div class="item">
-										<img src="img/apps.png" alt="#">
-										<div class="text">
-											<div class="sqare small">129,4 м2</div>
-											<div class="count small">2</div>
+										<div class="item" data-chosenApps="3+" data-chooseCurrent="10">
+											<div class="item--title">
+												<div class="body-1">Студия 52,2 м2</div>
+												<div class="small">от 5 108 426 ₽</div>
+												<div class="small">В ипотеку — от 80 502 ₽/мес </div>
+											</div>
+											<img src="img/apps.png" alt="#">
+											<div class="text">
+												<div class="sqare small">129,4 м2</div>
+												<div class="count small">2</div>
+											</div>
+											<div class="item--info">
+												<div class="body-2">8-12 этаж</div>
+												<div class="body-2">20 корп.</div>
+											</div>
+											<a href="#" class="button button--main large">Смотреть 10 квартир этого типа</a>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="right">
-							<div class="chooseApps__current active">
-								<div class="title">
-									<div class="body-1">Проект</div>
-									<div class="body-1">Золотой берег</div>
-								</div>
-								<div class="images">
-									<div class="chooseApps__typeApps">
-										<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
-										<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+							<div class="right">
+								<div class="chooseApps__current" data-currentApps="1">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
 									</div>
-									<div class="image">
-										<img src="img/apps-full.png" alt="#" data-type="Квартира">
-										<img src="img/infrastructure-1.png" alt="#" data-type="Этаж" class="hidden">
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" alt="#" data-typeimg="Квартира">
+											<img src="img/infrastructure-1.png" alt="#" data-typeimg="Этаж" class="hidden">
+										</div>
 									</div>
-								</div>
-								<div class="fullInfo">
-									<div class="info">
-										<div class="small">Площадь</div>
-										<div class="body-2">52,2 м2</div>
-									</div>
-									<div class="info">
-										<div class="small">Этаж</div>
-										<div class="body-2">8-12</div>
-									</div>
-									<div class="info">
-										<div class="small">Корпус</div>
-										<div class="body-2">20</div>
-									</div>
-									<div class="info">
-										<div class="small">Стоимость</div>
-										<div class="body-2">от 5 108 426 ₽</div>
-									</div>
-									<div class="info">
-										<div class="small">В ипотеку</div>
-										<div class="body-2">от 80 502 ₽/мес</div>
-									</div>
-								</div>
-							</div>
-							<div class="chooseApps__current">
-								<div class="title">
-									<div class="body-1">Проект</div>
-									<div class="body-1">Золотой берег</div>
-								</div>
-								<div class="images">
-									<div class="chooseApps__typeApps">
-										<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
-										<button class="button button--main" data-typeApps="Этаж">Этаж</button>
-									</div>
-									<div class="image">
-										<img src="img/apps-full.png" alt="#">
-										<img src="img/infrastructure-1.png" alt="#" class="hidden">
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
 									</div>
 								</div>
-								<div class="fullInfo">
-									<div class="info">
-										<div class="small">Площадь</div>
-										<div class="body-2">52,2 м2</div>
+								<div class="chooseApps__current" data-currentApps="2">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Цитрус</div>
 									</div>
-									<div class="info">
-										<div class="small">Этаж</div>
-										<div class="body-2">8-12</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
 									</div>
-									<div class="info">
-										<div class="small">Корпус</div>
-										<div class="body-2">20</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
 									</div>
-									<div class="info">
-										<div class="small">Стоимость</div>
-										<div class="body-2">от 5 108 426 ₽</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="3">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Опера</div>
 									</div>
-									<div class="info">
-										<div class="small">В ипотеку</div>
-										<div class="body-2">от 80 502 ₽/мес</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="4">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="5">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="6">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="7">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="8">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/hot.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="9">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
+									</div>
+								</div>
+								<div class="chooseApps__current" data-currentApps="10">
+									<div class="title">
+										<div class="body-1">Проект</div>
+										<div class="body-1">Золотой берег</div>
+									</div>
+									<div class="images">
+										<div class="chooseApps__typeApps">
+											<button class="button button--main active" data-typeApps="Квартира">Квартира</button>
+											<button class="button button--main" data-typeApps="Этаж">Этаж</button>
+										</div>
+										<div class="image">
+											<img src="img/apps-full.png" data-typeimg="Квартира" alt="#">
+											<img src="img/infrastructure-1.png" data-typeimg="Этаж" alt="#" class="hidden">
+										</div>
+									</div>
+									<div class="fullInfo">
+										<div class="info">
+											<div class="small">Площадь</div>
+											<div class="body-2">52,2 м2</div>
+										</div>
+										<div class="info">
+											<div class="small">Этаж</div>
+											<div class="body-2">8-12</div>
+										</div>
+										<div class="info">
+											<div class="small">Корпус</div>
+											<div class="body-2">20</div>
+										</div>
+										<div class="info">
+											<div class="small">Стоимость</div>
+											<div class="body-2">от 5 108 426 ₽</div>
+										</div>
+										<div class="info">
+											<div class="small">В ипотеку</div>
+											<div class="body-2">от 80 502 ₽/мес</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1500,6 +1675,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 							<div class="faq--item" data-faq="2">
@@ -1516,6 +1692,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 							<div class="faq--item" data-faq="3">
@@ -1532,6 +1709,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 							<div class="faq--item" data-faq="4">
@@ -1548,6 +1726,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 							<div class="faq--item" data-faq="5">
@@ -1569,6 +1748,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 							<div class="faq--item" data-faq="6">
@@ -1585,6 +1765,7 @@
 										минут, любуясь пейзажами. Или просто раскройте шторы — благодаря большим окнам балкона в комнатах всегда будет много
 										солнечного света.
 									</p>
+									<img src="img/faq1.png" alt="#">
 								</div>
 							</div>
 						</div>
@@ -1622,45 +1803,47 @@
 					</div>
 					<div class="about--finishing__wrapper">
 						<div class="filters finishing--filters">
-							<div class="select">
-								<div class="select-button">
-									<span class="select-button-text">Корпус 2</span>
-									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5 7.5L10 12.5L15 7.5" stroke="#16292C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</div>
-								<div class="select-list">
-									<div class="select-list-wrapper">
-										<span role="button" class="item body-2">
-											Корпус 1
-										</span>
-										<span role="button" class="item body-2">
-											Корпус 2
-											<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" id="i-check" viewBox="0 0 20 20" fill="none">
-												<path d="M5.5 11.3L8.202 14l6.8-7" stroke="#16292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</span>
+							<div class="filters--selects">
+								<div class="select">
+									<div class="select-button">
+										<span class="select-button-text">Корпус 2</span>
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 7.5L10 12.5L15 7.5" stroke="#16292C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+									<div class="select-list">
+										<div class="select-list-wrapper">
+											<span role="button" class="item body-2">
+												Корпус 1
+											</span>
+											<span role="button" class="item body-2">
+												Корпус 2
+												<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" id="i-check" viewBox="0 0 20 20" fill="none">
+													<path d="M5.5 11.3L8.202 14l6.8-7" stroke="#16292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="select">
-								<div class="select-button">
-									<span class="select-button-text">Готовая отделка</span>
-									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5 7.5L10 12.5L15 7.5" stroke="#16292C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</div>
-								<div class="select-list">
-									<div class="select-list-wrapper">
-										<span role="button" class="item body-2">
-											Готовая отделка
-											<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" id="i-check" viewBox="0 0 20 20" fill="none">
-												<path d="M5.5 11.3L8.202 14l6.8-7" stroke="#16292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-										</span>
-										<span role="button" class="item body-2">
-											Черновая отделка
-										</span>
+								<div class="select">
+									<div class="select-button">
+										<span class="select-button-text">Готовая отделка</span>
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5 7.5L10 12.5L15 7.5" stroke="#16292C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+									<div class="select-list">
+										<div class="select-list-wrapper">
+											<span role="button" class="item body-2">
+												Готовая отделка
+												<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" id="i-check" viewBox="0 0 20 20" fill="none">
+													<path d="M5.5 11.3L8.202 14l6.8-7" stroke="#16292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</span>
+											<span role="button" class="item body-2">
+												Черновая отделка
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -2297,15 +2480,17 @@
 			</section>
 			<section class="about--office">
 				<div class="container">
-					<h2 class="h2">Офис продаж</h2>
-					<div class="about--office__map">
-						<img src="img/map.png" alt="#">
-						<div class="info">
-							<img src="img/map-info.png" alt="#">
-							<a href="tel:+78094946071" class="phone h6">+7 809 494 60 71</a>
-							<div class="body-2">Новороссийск, п-кт Дзержинского, 244, к.6</div>
-							<div class="body-2 medium">Ежедневно с 09:00 до 20:00</div>
-							<button class="button button--main normal open--modal">Записаться на встречу</button>
+					<div class="about--office__block">
+						<h2 class="h2">Офис продаж</h2>
+						<div class="about--office__map">
+							<img src="img/map.png" alt="#">
+							<div class="info">
+								<img src="img/map-info.png" alt="#">
+								<a href="tel:+78094946071" class="phone h6">+7 809 494 60 71</a>
+								<div class="body-2">Новороссийск, п-кт Дзержинского, 244, к.6</div>
+								<div class="body-2 medium">Ежедневно с 09:00 до 20:00</div>
+								<button class="button button--main normal open--modal">Записаться на встречу</button>
+							</div>
 						</div>
 					</div>
 					<div class="about--office__list">
@@ -2356,6 +2541,7 @@
 								<p class="body-2">Главные события компании «Средастрой» - читайте и будьте в курсе все новостей.</p>
 								<a href="#" class="button button--main normal">Посмотреть </a>
 							</div>
+							<a href="#" class="button button--main">Все новости</a>
 						</div>
 					</div>
 					<div class="about--similarProjects">
