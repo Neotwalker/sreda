@@ -357,7 +357,7 @@
 									</button>
 									<div class="block block--right">
 										<div class="view-button">
-											<button class="view-button-item current" id="listView">
+											<button class="view-button-item current" data-showlist="listView">
 												<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<rect x="1.4" y="2.4" width="7.2" height="7.2" rx="1.6" stroke="white" stroke-width="1.2" />
 													<rect x="11.4" y="2.4" width="7.2" height="7.2" rx="1.6" stroke="white" stroke-width="1.2" />
@@ -365,7 +365,7 @@
 													<rect x="1.4" y="12.4" width="7.2" height="7.2" rx="1.6" stroke="white" stroke-width="1.2" />
 												</svg>
 											</button>
-											<button class="view-button-item" id="columnView">
+											<button class="view-button-item" data-showlist="columnView">
 												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M13.2322 2.69922H4.6557C3.07681 2.69922 1.79688 3.19697 1.79688 3.81098V7.14628C1.79688 7.76029 3.07681 8.25804 4.6557 8.25804H13.2322C14.8111 8.25804 16.091 7.76029 16.091 7.14628V3.81098C16.091 3.19697 14.8111 2.69922 13.2322 2.69922Z" stroke="#5E6C5B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M13.2322 10.6426H4.6557C3.07681 10.6426 1.79688 11.1403 1.79688 11.7543V15.0896C1.79688 15.7036 3.07681 16.2014 4.6557 16.2014H13.2322C14.8111 16.2014 16.091 15.7036 16.091 15.0896V11.7543C16.091 11.1403 14.8111 10.6426 13.2322 10.6426Z" stroke="#5E6C5B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -550,7 +550,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="page--chooseApps__block active" data-view="columnView">
+						<div class="page--chooseApps__block" data-view="columnView">
 							<div class="podbor--wrapper">
 								<div class="right">
 									<div class="right--header right--block">
@@ -1740,7 +1740,7 @@
 							<div class="show--booked">
 								<span class="body-1">Показывать забронированные</span>
 								<label class="checkbox-custom">
-									<input type="checkbox" id="switch-1" name="switch-1" checked="">
+									<input type="checkbox" id="switch-2" name="switch-2" checked>
 									<span class="checkbox-custom-switch"></span>
 								</label>
 							</div>
